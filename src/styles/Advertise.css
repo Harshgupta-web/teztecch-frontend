@@ -1,0 +1,206 @@
+/* src/styles/Advertise.css */
+.advertise-page {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #ff6b6b, #feca57);
+  color: white;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+.stats-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
+  text-align: center;
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #666;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #1a1a1a;
+}
+
+.ad-formats-section {
+  padding: 80px 0;
+}
+
+.formats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.format-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.format-card:hover {
+  transform: translateY(-4px);
+}
+
+.format-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.format-card h3 {
+  font-size: 1.4rem;
+  margin-bottom: 12px;
+}
+
+.format-card p {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.format-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ff6b6b;
+}
+
+.success-section {
+  padding: 40px 0;
+  background: #f8f9fa;
+}
+
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.brand-logo {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-form-section {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.contact-info p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  opacity: 0.95;
+}
+
+.contact-details p {
+  margin-bottom: 8px;
+}
+
+.contact-details a {
+  color: #feca57;
+}
+
+.ad-inquiry-form {
+  background: rgba(255,255,255,0.1);
+  padding: 30px;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.ad-inquiry-form input,
+.ad-inquiry-form textarea {
+  width: 100%;
+  padding: 12px 3px;
+  margin-bottom: 16px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.9);
+  font-family: inherit;
+}
+
+.ad-inquiry-form button {
+  width: 100%;
+  padding: 14px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ad-inquiry-form button:hover {
+  background: #ff5252;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .formats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}

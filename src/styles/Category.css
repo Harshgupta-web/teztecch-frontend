@@ -1,0 +1,61 @@
+.category-list {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Article as flat block with bottom border */
+.category-article {
+  padding: 18px 0 24px;
+  border-bottom: 2px solid #ddd;
+}
+
+/* last one without extra border */
+.category-article:last-child {
+  border-bottom: none;
+}
+
+/* Image full width but no card box */
+.category-article-image {
+  width: 50%;
+  max-height: 420px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+
+
+}
+
+.category-article-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.category-article-excerpt {
+  font-size: 0.98rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.category-article-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #333;
+}
+
+.category-article-body p {
+  margin-bottom: 10px;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .category-article {
+    padding: 14px 0 18px;
+  }
+  .category-article-image {
+    max-height: 280px;
+  }
+  .category-article-title {
+    font-size: 1.25rem;
+  }
+}

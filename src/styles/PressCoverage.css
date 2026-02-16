@@ -1,0 +1,204 @@
+/* src/styles/PressCoverage.css */
+.press-page {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: white;
+  padding: 100px 0 80px;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.95;
+}
+
+.coverage-section {
+  padding: 80px 0;
+}
+
+.coverage-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  gap: 32px;
+}
+
+.coverage-item {
+  background: white;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+  border: 1px solid #f3f4f6;
+}
+
+.coverage-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.coverage-logo {
+  margin-bottom: 20px;
+}
+
+.logo-placeholder {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #374151;
+  text-align: center;
+}
+
+.coverage-content h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+  color: #1f2937;
+}
+
+.coverage-meta {
+  margin-bottom: 12px;
+}
+
+.coverage-date {
+  background: #f3f4f6;
+  color: #6b7280;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.coverage-excerpt {
+  color: #6b7280;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.coverage-link {
+  font-weight: 600;
+  color: #6366f1;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.coverage-link:hover {
+  color: #4f46e5;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 48px;
+  color: #1f2937;
+}
+
+.media-kit-section {
+  padding: 80px 0;
+  background: #f8fafc;
+}
+
+.media-kit-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.media-kit-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+.media-kit-text p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.download-btn {
+  display: inline-block;
+  background: #6366f1;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+
+.download-btn:hover {
+  background: #4f46e5;
+}
+
+.placeholder {
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  height: 200px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.contact-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.contact-details {
+  max-width: 500px;
+  margin: 24px auto 0;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+
+.contact-details a {
+  color: #6366f1;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .coverage-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .media-kit-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .coverage-item {
+    padding: 20px;
+  }
+}

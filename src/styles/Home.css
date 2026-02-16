@@ -1,0 +1,140 @@
+.home-container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+.two-column-layout { 
+  display: grid; 
+  grid-template-columns: 2fr 1fr; 
+  gap: 30px; 
+  margin: 40px 0; 
+}
+.main-column h2 { font-size: 2rem; margin-bottom: 20px; border-bottom: 3px solid #007cba; padding-bottom: 10px; }
+.sidebar h3 { color: #007cba; margin-bottom: 15px; }
+
+.news-card { 
+  display: block; 
+  text-decoration: none; 
+  color: inherit; 
+  margin-bottom: 20px; 
+  border-radius: 8px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+}
+.news-card:hover { transform: translateY(-5px); }
+
+.news-card--large .card-image { height: 250px; object-fit: cover; }
+.news-card--small .card-image { height: 120px; object-fit: cover; }
+.card-image-wrapper { position: relative; }
+.category-badge { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  background: #007cba; 
+  color: white; 
+  padding: 4px 8px; 
+  font-size: 0.75rem; 
+  border-radius: 4px; 
+}
+.card-content { padding: 15px; }
+.card-title { font-size: 1.3rem; margin: 0 0 10px 0; line-height: 1.4; }
+.card-excerpt { color: #666; margin: 0; font-size: 0.95rem; }
+
+
+
+
+.home-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.loader {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Section block */
+.section-block {
+  margin-top: 10px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+/* Horizontal scroll row */
+.horizontal-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+  height: 0;                      /* Chrome/Safari/Edge */
+}
+
+.horizontal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+.horizontal-item {
+  flex: 0 0 280px;          /* desktop card width */
+  scroll-snap-align: start;
+}
+
+.story-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.section-see-all {
+  font-size: 0.85rem;
+  color: #0077b6;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.section-see-all:hover {
+  text-decoration: underline;
+}
+
+
+
+/* On bigger screens, show 3–4 cards fully in view */
+@media (min-width: 992px) {
+  .horizontal-item {
+    flex-basis: 25%;        /* about 4 cards visible */
+    max-width: 280px;
+  }
+}
+
+/* On small screens, wider cards */
+@media (max-width: 768px) {
+  .horizontal-item {
+    flex-basis: 80%;
+  }
+}
+

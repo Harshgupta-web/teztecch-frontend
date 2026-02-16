@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.magazine-grid {
+  margin-top: 50px;
+}
+
+.section-title {
+  border-bottom: 3px solid #ff0000; /* Red accent like the Buzz logo */
+  display: inline-block;
+  margin-bottom: 30px;
+  padding-bottom: 5px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.news-card {
+  transition: transform 0.3s ease;
+  background: #fff;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}

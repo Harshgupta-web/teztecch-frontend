@@ -1,0 +1,43 @@
+/* src/styles/Stories.css */
+.stories-page .section-title {
+  font-size: 2.2rem;
+}
+
+.stories-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.filter-chip {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-chip--active {
+  background: #0077b6;
+  border-color: #0077b6;
+  color: #fff;
+}
+
+/* FIXED WIDTH CARDS - same as News */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 280px));  /* FIXED max width */
+  gap: 24px;
+  justify-content: center;              /* CENTER when 1-2 cards */
+  max-width: 1200px;                    /* container limit */
+}
+
+/* Mobile: single column */
+@media (max-width: 768px) {
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+}

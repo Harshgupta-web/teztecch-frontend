@@ -1,0 +1,102 @@
+/* src/styles/Topics.css */
+.topics-page {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  padding: 80px 0;
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #1f2937;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.topics-grid {
+  padding: 40px 0;
+}
+
+.topic-section {
+  margin-bottom: 64px;
+}
+
+.topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.topic-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.topic-link {
+  font-weight: 600;
+  color: #374151;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.topic-link:hover {
+  color: #0077b6;
+}
+
+.topic-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  justify-content: center;
+}
+
+/* Loader */
+.loader {
+  text-align: center;
+  padding: 60px;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .topic-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .topic-articles {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .topic-title {
+    font-size: 1.5rem;
+  }
+}
